@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎓 CGPA Calculator"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Subject 1 -->
+        <EditText
+            android:id="@+id/grade1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grade 1"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/credit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Credit 1"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Subject 2 -->
+        <EditText
+            android:id="@+id/grade2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grade 2"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/credit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Credit 2"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Subject 3 -->
+        <EditText
+            android:id="@+id/grade3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Grade 3"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/credit3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Credit 3"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Button -->
+        <Button
+            android:id="@+id/calculateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate CGPA"
+            android:textAllCaps="false"
+            android:backgroundTint="#008577"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Result -->
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your CGPA will be shown here"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:gravity="center" />
+    </LinearLayout>
+</ScrollView>
